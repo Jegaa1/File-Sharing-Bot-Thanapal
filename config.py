@@ -34,7 +34,7 @@ DB_NAME = os.environ.get("DATABASE_NAME", "leecher")
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002068002686"))
 
-TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "8"))
+TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "10"))
 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
