@@ -37,7 +37,7 @@ async def channel_post(client: Client, message: Message):
     converted_id = post_message.id * abs(client.db_channel.id)
     string = f"get-{converted_id}"
     base64_string = await encode(string)
-    link = f"https://tamilserialbot1.jasurun.workers.dev?start={base64_string}"
+    link = f"https://tamilserialbot2.jasurun.workers.dev?start={base64_string}"
     #Asuran
     # get media type
     media = message.document or message.video or message.audio or message.photo
@@ -64,7 +64,7 @@ async def new_post(client: Client, message: Message):
     converted_id = message.id * abs(client.db_channel.id)
     string = f"get-{converted_id}"
     base64_string = await encode(string)
-    link = f"https://tamilserialbot1.jasurun.workers.dev?start={base64_string}"
+    link = f"https://tamilserialbot2.jasurun.workers.dev?start={base64_string}"
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔁 Share URL", url=f'https://telegram.me/share/url?url={link}')]])
     try:
         await message.edit_reply_markup(reply_markup)
